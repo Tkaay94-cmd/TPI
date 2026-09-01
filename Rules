@@ -1,0 +1,8 @@
+# Hilt, Room and WorkManager primarily use generated code.
+# Keep custom rules minimal and evidence-driven.
+
+# Keep generic Signature metadata for reflective Android/framework use where needed.
+-keepattributes Signature
+
+# Avoid suppressing warnings globally. New rules should be added only when
+# justified by an actual release-build/R8 failure.
