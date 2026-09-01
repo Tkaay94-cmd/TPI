@@ -1,0 +1,45 @@
+ThirdPartyInspector/
+├── build.gradle.kts
+├── settings.gradle.kts
+├── gradle.properties
+├── gradle/
+│   └── libs.versions.toml
+├── app/
+│   ├── build.gradle.kts
+│   ├── proguard-rules.pro
+│   └── src/
+│       ├── main/
+│       │   ├── AndroidManifest.xml
+│       │   ├── java/com/thirdpartyinspector/
+│       │   │   ├── MainActivity.kt
+│       │   │   ├── ThirdPartyInspectorApplication.kt
+│       │   │   ├── data/
+│       │   │   │   ├── local/
+│       │   │   │   ├── model/
+│       │   │   │   └── repository/
+│       │   │   ├── domain/
+│       │   │   │   ├── model/
+│       │   │   │   └── usecase/
+│       │   │   ├── scanner/
+│       │   │   ├── ui/
+│       │   │   │   ├── dashboard/
+│       │   │   │   ├── details/
+│       │   │   │   ├── findings/
+│       │   │   │   ├── packages/
+│       │   │   │   ├── permissions/
+│       │   │   │   ├── settings/
+│       │   │   │   └── theme/
+│       │   │   ├── util/
+│       │   │   └── worker/
+│       │   └── res/
+│       │       ├── drawable/
+│       │       ├── mipmap-hdpi/
+│       │       ├── mipmap-mdpi/
+│       │       ├── mipmap-xhdpi/
+│       │       ├── mipmap-xxhdpi/
+│       │       ├── mipmap-xxxhdpi/
+│       │       ├── values/
+│       │       └── xml/
+│       ├── test/java/com/thirdpartyinspector/
+│       └── androidTest/java/com/thirdpartyinspector/
+└── README.md
