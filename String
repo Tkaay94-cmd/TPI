@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ThirdPartyInspector</string>
+</resources>
+
+<resources>
+    <style
+        name="Theme.ThirdPartyInspector"
+        parent="android:style/Theme.Material.NoActionBar" />
+</resources>
