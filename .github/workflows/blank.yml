@@ -1,0 +1,20 @@
+package com.thirdpartyinspector
+
+import android.app.Application
+import android.content.Context
+import androidx.test.runner.AndroidJUnitRunner
+
+class ThirdPartyInspectorTestRunner : AndroidJUnitRunner() {
+
+    override fun newApplication(
+        cl: ClassLoader?,
+        className: String?,
+        context: Context?
+    ): Application {
+        return super.newApplication(
+            cl,
+            ThirdPartyInspectorApplication::class.java.name,
+            context
+        )
+    }
+}
