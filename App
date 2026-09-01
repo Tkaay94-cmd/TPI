@@ -1,0 +1,38 @@
+package com.thirdpartyinspector
+
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class ThirdPartyInspectorApplication : Application()
+
+package com.thirdpartyinspector
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import dagger.hilt.android.AndroidEntryPoint
+import com.thirdpartyinspector.ui.theme.ThirdPartyInspectorTheme
+
+@AndroidEntryPoint
+class MainActivity : ComponentActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+
+        setContent {
+            ThirdPartyInspectorTheme {
+                ThirdPartyInspectorApp()
+            }
+        }
+    }
+}
+
+@Composable
+private fun ThirdPartyInspectorApp() {
+    Text(text = "ThirdPartyInspector")
+}
