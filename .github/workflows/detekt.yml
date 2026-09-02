@@ -1,4 +1,14 @@
-# This workflow uses actions that are not certified by GitHub.
+- name: Get Detekt download URL
+  id: detekt-url
+  env:
+    DETEKT_RELEASE_TAG: v1.23.8
+  run: |
+    gh release view "$DETEKT_RELEASE_TAG" \
+      --repo detekt/detekt \
+      --json assets \
+      --jq '.assets[] | select(.name | endswith(".zip")) | .url' \
+      > detekt_url.txt
+    echo "url=$(cat detekt_url.txt)" >> "$GITHUB_OUTPUT"# This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
 # documentation.
